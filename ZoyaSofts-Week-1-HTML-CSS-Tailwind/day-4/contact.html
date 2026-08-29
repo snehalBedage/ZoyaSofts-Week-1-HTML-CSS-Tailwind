@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>CONTACT US</h1>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"placeholder="Enter your Email" required>
+
+        <label for="subject">Select A Subject:</label>
+
+        <select id="subject" name="subject">
+            <option>General Enquiry</option>
+            <option>Internship</option>
+            <option>Feedback</option>
+        </select>
+
+        <p>Preferred Contact Time</p>
+
+        <input type="radio" id="morning" name="time" value="Morning">
+        <label for="morning">Morning</label>
+        <input type="radio" id="evening" name="time" value="Evening">
+        <label for="evening">Evening</label>
+
+        <br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to updates</label>
+
+        <br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your Message" required></textarea>
+
+
+        <button type="submit">SUBMIT</button>
+
+    </form>
+</body>
+</html>

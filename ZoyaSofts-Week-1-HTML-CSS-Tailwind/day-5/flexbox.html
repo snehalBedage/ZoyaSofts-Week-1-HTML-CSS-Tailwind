@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox and Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1e3a5f;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .courses {
+            padding: 30px;
+        }
+
+        .courses h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px #ccc;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+
+        <h1>ZoyaSoft</h1>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+    <section class="courses">
+
+        <h2>Our Courses</h2>
+
+        <div class="course-grid">
+
+            <article class="card">
+                <h3>HTML & CSS</h3>
+                <p>Learn website structure, styling and responsive design.</p>
+            </article>
+
+            <article class="card">
+                <h3>JavaScript</h3>
+                <p>Learn programming and create interactive websites.</p>
+            </article>
+
+            <article class="card">
+                <h3>Python</h3>
+                <p>Learn Python programming and problem solving.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

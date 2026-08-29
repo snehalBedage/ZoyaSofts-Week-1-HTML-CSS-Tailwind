@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tailwind CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white px-6 py-4">
+
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold">
+                ZoyaSofts
+            </h1>
+
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-300">Home</a>
+                <a href="#" class="hover:text-blue-300">Courses</a>
+                <a href="#" class="hover:text-blue-300">Contact</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Courses -->
+    <main class="max-w-6xl mx-auto px-6 py-10">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Our Courses
+        </h2>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                <h3 class="text-xl font-bold mb-3">
+                    HTML & CSS
+                </h3>
+
+                <p>
+                    Learn website structure, styling and responsive design.
+                </p>
+            </article>
+
+
+            <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                <h3 class="text-xl font-bold mb-3">
+                    JavaScript
+                </h3>
+
+                <p>
+                    Learn programming and create interactive websites.
+                </p>
+            </article>
+
+
+            <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+                <h3 class="text-xl font-bold mb-3">
+                    Python
+                </h3>
+
+                <p>
+                    Learn Python programming and problem solving.
+                </p>
+            </article>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="max-w-lg mx-auto mt-12">
+
+            <h2 class="text-3xl font-bold text-center mb-6">
+                Contact Us
+            </h2>
+
+            <form class="bg-white p-6 rounded-lg shadow">
+
+                <label for="name" class="block font-medium mb-2">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your Name"
+                    required
+                    class="w-full border p-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+
+
+                <label for="email" class="block font-medium mb-2">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    required
+                    class="w-full border p-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+
+
+                <label for="subject" class="block font-medium mb-2">
+                    Select A Subject
+                </label>
+
+                <select
+                    id="subject"
+                    name="subject"
+                    class="w-full border p-3 mb-4 rounded"
+                >
+                    <option>General Enquiry</option>
+                    <option>Internship</option>
+                    <option>Feedback</option>
+                </select>
+
+
+                <p class="font-medium mb-2">
+                    Preferred Contact Time
+                </p>
+
+                <div class="mb-4">
+
+                    <label>
+                        <input type="radio" name="time" value="Morning">
+                        Morning
+                    </label>
+
+                    <label class="ml-5">
+                        <input type="radio" name="time" value="Evening">
+                        Evening
+                    </label>
+
+                </div>
+
+
+                <label class="flex items-center gap-2 mb-4">
+                    <input type="checkbox" name="subscribe">
+                    Subscribe to updates
+                </label>
+
+
+                <label for="message" class="block font-medium mb-2">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter your Message"
+                    rows="4"
+                    class="w-full border p-3 mb-5 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700"
+                >
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
